@@ -1,0 +1,18 @@
+{
+  "name": "IntercomAnalytics",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "fs-jetpack": "^0.7.0",
+    "electron-prebuilt": "^0.31.0",
+    "asar": "^0.7.2",
+    "q": "^1.4.1",
+    "gulp-copy": "0.0.2",
+    "gulp-uglify": "^1.3.0",
+    "gulp-usemin": "^0.3.12",
+    "rcedit": "^0.3.0",
+    "intercom-client": "^2.8.0",
+    "bluebird": "^3.4.0",
+    "unirest": "*"
+  }
+}

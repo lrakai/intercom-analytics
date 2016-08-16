@@ -1,0 +1,50 @@
+<div style="width:100%" layout="row">
+    <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
+                md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-sm')">
+
+        <md-toolbar layout="row" class="md-whiteframe-z1">
+            <h1>Intercom Analytics</h1>
+        </md-toolbar>
+        <md-input-container style="margin-bottom:0">
+            <label>{{_ctrl.status}}</label>
+        </md-input-container>
+        <md-input-container style="margin-bottom:0">
+            <label>{{_ctrl.userStatus}}</label>
+        </md-input-container>
+        <md-input-container style="margin-bottom:0">
+            <label>{{_ctrl.eventStatus}}</label>
+        </md-input-container>
+        <md-input-container style="margin-bottom:0">
+            <label style="color:red">{{_ctrl.errorMessage}}</label>
+        </md-input-container>
+    </md-sidenav>
+
+    <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
+
+        <md-toolbar layout="row" class="md-whiteframe-z1">
+            <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
+                <md-icon md-svg-icon="menu"></md-icon>
+            </md-button>
+            <h1>Counts</h1>
+        </md-toolbar>
+
+        <md-content flex id="content">
+            <div layout="column" style="width:50%">
+                <br />
+                <md-content layout-padding class="autoScroll">
+                    <md-input-container ng-repeat="event in _ctrl.eventTrackers">
+                        <label>{{event.name}}</label>
+                        <input ng-model="event.count" type="text">
+                        <div style="    position: absolute;top: 27px;right: 0px;cursor: pointer;" ng-click="_ctrl.removeTracker($index)">X</div>
+                    </md-input-container>
+                </md-content>
+                <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+					<input type="text" ng-model="_ctrl.addEvent">
+                    <md-button class="md-raised md-info" ng-click="_ctrl.createEventTracker()">Add</md-button>
+                </section>
+            </div>
+        </md-content>
+
+    </div>
+</div>
