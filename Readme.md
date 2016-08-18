@@ -52,4 +52,4 @@ gulp build-electron
 
 # Acknowledgments
 
-Electron boilerplate taken from https://github.com/jasimea/ElectronAngular
+Electron boilerplate taken from https://github.com/jasimea/ElectronAngular by @jasimea
