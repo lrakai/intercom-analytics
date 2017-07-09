@@ -8,7 +8,7 @@ Tested on Windows.
 
 ![Screenshot](resources/common/screenshot.png?raw=true "Screenshot")
 
-#Install
+## Install
 --- 
 
 Install dependencies.
@@ -32,7 +32,7 @@ npm install
 ```
 
 
-#Run 
+## Run 
 ---
 
 Run your application by entering following command in your command prompt
@@ -41,7 +41,7 @@ Run your application by entering following command in your command prompt
 gulp run
 ```
 
-#Release
+## Release
 ---
 
 You can get the release version with following command:
@@ -50,6 +50,7 @@ You can get the release version with following command:
 gulp build-electron
 ```
 
-# Acknowledgments
+## Acknowledgments
+---
 
 Electron boilerplate taken from https://github.com/jasimea/ElectronAngular by @jasimea
